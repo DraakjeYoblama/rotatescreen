@@ -1,1 +1,1 @@
-For some reason when I use this script it resets my brightness to a certain level. I don't know why that happens so if anyone knows a fix, please let me know
+For some reason when I use this script it resets my brightness to a certain level. I don't know why that happens so if anyone knows a fix, please let me know. For now I tried a fix that resets the brightness afterwards, but that only works sometimes
