@@ -5,7 +5,7 @@ width := NumGet(DEVMODE, 172, "uint")
 height := NumGet(DEVMODE, 176, "uint")
 
 
-
+^!Left::
 <^>!Left::
 CurrentBrightness := GetCurrentBrightNess()
 NumPut(width, DEVMODE, 176, "int")
@@ -15,6 +15,7 @@ DllCall("ChangeDisplaySettingsW", "ptr", &DEVMODE, "uint", 0)
 ChangeBrightness(CurrentBrightness)
 return
 
+^!Down::
 <^>!Down::
 CurrentBrightness := GetCurrentBrightNess()
 NumPut(width, DEVMODE, 172, "int")
@@ -24,6 +25,7 @@ DllCall("ChangeDisplaySettingsW", "ptr", &DEVMODE, "uint", 0)
 ChangeBrightness(CurrentBrightness)
 return
 
+^!Right::
 <^>!Right::
 CurrentBrightness := GetCurrentBrightNess()
 NumPut(width, DEVMODE, 176, "int")
@@ -33,6 +35,7 @@ DllCall("ChangeDisplaySettingsW", "ptr", &DEVMODE, "uint", 0)
 ChangeBrightness(CurrentBrightness)
 return
 
+^!Up::
 <^>!Up::
 CurrentBrightness := GetCurrentBrightNess()
 NumPut(width, DEVMODE, 172, "int")
